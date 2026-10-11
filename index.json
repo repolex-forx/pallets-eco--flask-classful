@@ -1,0 +1,11 @@
+{
+  "org": "pallets-eco",
+  "repo": "flask-classful",
+  "versions": [
+    {
+      "commit": "ff67068288a7b56dbe94a298107a341aef141669",
+      "tag": "",
+      "parsed_at": "2026-10-11T01:42:08.743976+00:00"
+    }
+  ]
+}

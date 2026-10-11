@@ -1,1 +1,124 @@
-Initializing
+# Repolex Knowledge Graph of pallets-eco/flask-classful
+
+RDF knowledge graph data for [pallets-eco/flask-classful](https://github.com/pallets-eco/flask-classful), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download pallets-eco/flask-classful
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── ff67068288a7b56dbe94a298107a341aef141669
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── ff67068288a7b56dbe94a298107a341aef141669
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 0c92e402f68d62331e28c64d928bf3d475cf51d0.nq.gz
+│   ├── 1ce0a98c2783b7ba81f298c86290c052c103c237.nq.gz
+│   ├── 2b1df74e94799372c0d0634b6e747fabcdee4fd6.nq.gz
+│   ├── 325d6f31efcda0cd3e9aa77db1fcaf4157ea27fb.nq.gz
+│   ├── 3514dce1debdb460aa1ddea321dcbde2bee95483.nq.gz
+│   ├── 4866ffdf755a7bf5a905cd06492f55d9ebe6fa64.nq.gz
+│   ├── 4c4ea33aa398627fca4d1e0b998128dc55cdcb15.nq.gz
+│   ├── 4f753255d3c225a1257d4530631b3c09c002c3fb.nq.gz
+│   ├── 5068bfd16b3130e8be6d8ef0321e57f244a15a49.nq.gz
+│   ├── 56418592ba4796dbe4af9dcfab7e93ae58faa5a7.nq.gz
+│   ├── 6478b68b8b41070c51f329c02ef9b76938a8fd53.nq.gz
+│   ├── 68dcae3be9adfadadd17da415f66ec4f47be3203.nq.gz
+│   ├── 69378f5ec217debe350641c54df60a03702eed86.nq.gz
+│   ├── 6b79eaa1d6e754caa0986f1f206799c325b95b4c.nq.gz
+│   ├── 74ba185bbe9f7bf790ccd5327b7a35924c13f94c.nq.gz
+│   ├── 790080f0fd9475faf81535f8203e77932f3e3a15.nq.gz
+│   ├── 7ad8f9a69ede2af945459063a353bc33c5f67c3b.nq.gz
+│   ├── 826245cd27b2fb3863305cb03a2b20bacf8f0123.nq.gz
+│   ├── 82695441c6259f9edb55f44b0d8c1c2df7cbc8bd.nq.gz
+│   ├── 8a3188cb2b73da88ad8e05dc578758078507e40f.nq.gz
+│   ├── 954237b9b9f2b248bb1397a15c055c0af1cad03e.nq.gz
+│   ├── 9deb3201e57edcc4a630c58fbe4d4da360cde8cb.nq.gz
+│   ├── 9e89167c7bfe780f2b5745ac7361b04e9c264595.nq.gz
+│   ├── ab4dafacf29115ab88706c935d14f9127b3b7ecd.nq.gz
+│   ├── abea8a9f2a5e997fbc576d38dbd244a2da099152.nq.gz
+│   ├── ae1bbbf299c09715d0c5994fd5574ac5d878e2f6.nq.gz
+│   ├── b04ebda0a146142eaba78f4a4ee2a5bd61818be2.nq.gz
+│   ├── b162ee22ac55b7f798ceed95e4c02e2c2c456b10.nq.gz
+│   ├── bfaad5bbe163134e121accf3b16c902cfbf98925.nq.gz
+│   ├── c3bb2c75205cb3d0fd24f4cea9ae66e7dbc79667.nq.gz
+│   ├── c77ba475096814c566a25a910fac7becf89bf283.nq.gz
+│   ├── c809737f89469e75c30d59e75e058723a35ced22.nq.gz
+│   ├── c94cd81e2690e6bf45105a9813aab63e373834b5.nq.gz
+│   ├── cca6affaacdf3833dd9319494b4b839f12abcce6.nq.gz
+│   ├── d30e4f76bcadbfd6583c38f4c3fff0025ae26a6e.nq.gz
+│   ├── d4bb2cbb9eddb1bb1b4f366623044af8e4830919.nq.gz
+│   ├── e0deb0e7eb31853a44d4cd57e7428baba3dc073f.nq.gz
+│   ├── e121c001f88444fd8950eab53879017872792880.nq.gz
+│   ├── e16d3cfc76d64250d7d9ea0779ed754bdd5df8bf.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── eb104fe75014754aa44eb45b5f2b90fb8afb4ba3.nq.gz
+│   ├── ef287ffc1e42c96dc2b1d1c3071887b7350ee67b.nq.gz
+│   ├── f11ba8711740c95f1e928c11b0e781437b4159f2.nq.gz
+│   ├── fbc73d7d19198a28dac7c253e26ce1ce011f9684.nq.gz
+│   └── fdfbf4871b3639bf70784c0d2488e0be5e5fa81d.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── ff67068288a7b56dbe94a298107a341aef141669.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 53 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[pallets-eco/flask-classful](https://github.com/pallets-eco/flask-classful)
+
+---
+*Parsed on 2026-10-11 by [repolex](https://repolex.ai)*
